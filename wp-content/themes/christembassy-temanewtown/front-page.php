@@ -51,9 +51,15 @@ get_header();
 						</a>
 					</div>
 
-					<div style="display:flex; align-items:center; gap:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.08); font-size:0.86rem; color:#94A3B8;">
-						<span>📍 <strong>Location:</strong> Opposite Manhean Senior High Technical School, Tema Newtown</span>
-						<span>📞 <a href="tel:+233208591214" style="color:#38BDF8; text-decoration:none;">+233 20 859 1214</a></span>
+					<div class="hero-meta-row">
+						<span class="hero-meta-item">
+							<span aria-hidden="true">📍</span>
+							<span><strong>Location:</strong> Opposite Manhean Senior High Technical School, Tema Newtown</span>
+						</span>
+						<span class="hero-meta-item">
+							<span aria-hidden="true">📞</span>
+							<a href="tel:+233208591214">+233 20 859 1214</a>
+						</span>
 					</div>
 				</div>
 
@@ -61,7 +67,7 @@ get_header();
 				<div>
 					<div class="featured-show-card" data-modal-target="modal-live">
 						<div class="featured-show-img-wrap">
-							<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80" alt="Voices of Faith Talk Show" class="featured-show-img">
+							<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80" alt="Host of the Voices of Faith talk show sharing the Word" class="featured-show-img" loading="eager" decoding="async" fetchpriority="high" srcset="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80 1200w" sizes="(max-width: 900px) 92vw, 480px">
 							<span class="featured-show-tag">TALK SHOW SPECIAL</span>
 							<span class="featured-schedule-pill">EVERY FRIDAY 3 PM GMT</span>
 						</div>
@@ -136,7 +142,7 @@ get_header();
 				<!-- Pillar 1: The Word -->
 				<div class="pillar-card">
 					<div class="pillar-img-wrap">
-						<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="The Word" class="pillar-img">
+						<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="The Word" class="pillar-img" srcset="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 640px) 92vw, (max-width: 992px) 46vw, 30vw" loading="lazy" decoding="async">
 					</div>
 					<div class="pillar-body">
 						<h3 class="pillar-title">The Word</h3>
@@ -152,7 +158,7 @@ get_header();
 				<!-- Pillar 2: The Fellowship -->
 				<div class="pillar-card">
 					<div class="pillar-img-wrap">
-						<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="The Fellowship" class="pillar-img">
+						<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="The Fellowship" class="pillar-img" srcset="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 640px) 92vw, (max-width: 992px) 46vw, 30vw" loading="lazy" decoding="async">
 					</div>
 					<div class="pillar-body">
 						<h3 class="pillar-title">The Fellowship</h3>
@@ -168,7 +174,7 @@ get_header();
 				<!-- Pillar 3: Teens & Youth -->
 				<div class="pillar-card">
 					<div class="pillar-img-wrap">
-						<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Teens & Youth" class="pillar-img">
+						<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Teens & Youth" class="pillar-img" srcset="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 640px) 92vw, (max-width: 992px) 46vw, 30vw" loading="lazy" decoding="async">
 					</div>
 					<div class="pillar-body">
 						<h3 class="pillar-title">Teens & Youth</h3>
@@ -195,7 +201,7 @@ get_header();
 					</h3>
 				</div>
 				<div class="community-content-side">
-					<span class="section-label" style="color:#38BDF8;">YOU BELONG HERE</span>
+					<span class="section-label">YOU BELONG HERE</span>
 					<h2 class="community-headline">Everyone is welcome here.</h2>
 					<p class="community-text">
 						Every weekend at Christ Embassy Tema Newtown—whether you're a lifelong Christian, curious about faith, or seeking healing or a fresh start—you'll find a warm, joyful community eager to explore the Word and celebrate God's goodness with you.
@@ -224,7 +230,7 @@ get_header();
 			<div class="rail-grid">
 				<div class="video-thumb-card">
 					<div class="video-thumb-img-wrap">
-						<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Pastor Chris Teachings" class="video-thumb-img">
+						<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Pastor Chris Teachings" class="video-thumb-img" srcset="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 520px) 92vw, (max-width: 992px) 46vw, 23vw" loading="lazy" decoding="async">
 						<span class="video-badge-pill">Daily Message</span>
 						<div class="video-thumb-overlay"><div class="play-circle-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
 					</div>
@@ -236,8 +242,8 @@ get_header();
 
 				<div class="video-thumb-card">
 					<div class="video-thumb-img-wrap">
-						<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Atmosphere for Miracles" class="video-thumb-img">
-						<span class="video-badge-pill" style="color:#FACC15;">Flagship Series</span>
+						<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Atmosphere for Miracles" class="video-thumb-img" srcset="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 520px) 92vw, (max-width: 992px) 46vw, 23vw" loading="lazy" decoding="async">
+						<span class="video-badge-pill video-badge-pill--amber">Flagship Series</span>
 						<div class="video-thumb-overlay"><div class="play-circle-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
 					</div>
 					<div class="video-thumb-body">
@@ -248,7 +254,7 @@ get_header();
 
 				<div class="video-thumb-card">
 					<div class="video-thumb-img-wrap">
-						<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Healing Streams Testimonies" class="video-thumb-img">
+						<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Healing Streams Testimonies" class="video-thumb-img" srcset="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 520px) 92vw, (max-width: 992px) 46vw, 23vw" loading="lazy" decoding="async">
 						<span class="video-badge-pill badge-live-red">LIVE STUDIO</span>
 						<div class="video-thumb-overlay"><div class="play-circle-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
 					</div>
@@ -260,7 +266,7 @@ get_header();
 
 				<div class="video-thumb-card">
 					<div class="video-thumb-img-wrap">
-						<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80" alt="Morning Dew" class="video-thumb-img">
+						<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80" alt="Morning Dew" class="video-thumb-img" srcset="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 520px) 92vw, (max-width: 992px) 46vw, 23vw" loading="lazy" decoding="async">
 						<span class="video-badge-pill">Devotional</span>
 						<div class="video-thumb-overlay"><div class="play-circle-icon"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
 					</div>
@@ -295,7 +301,7 @@ get_header();
 
 			<div class="bento-grid">
 				<div class="bento-card bento-large-left">
-					<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1000&q=80" alt="Tema Newtown Celebration" class="bento-card-bg">
+					<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1000&q=80" alt="Tema Newtown Celebration" class="bento-card-bg" srcset="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1000&q=80 1000w" sizes="(max-width: 640px) 92vw, (max-width: 992px) 50vw, 40vw" loading="lazy" decoding="async">
 					<span class="bento-badge">Christ Embassy Celebration</span>
 					<div class="bento-card-overlay">
 						<h3 class="bento-title">Soul Winners & Ministry Celebration</h3>
@@ -304,8 +310,8 @@ get_header();
 				</div>
 
 				<div class="bento-card bento-mid-top">
-					<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Word Impartation" class="bento-card-bg">
-					<span class="bento-badge" style="color:#F59E0B; border-color:rgba(245,158,11,0.3);">Word Impartation</span>
+					<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="Word Impartation" class="bento-card-bg" srcset="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 640px) 92vw, (max-width: 992px) 50vw, 40vw" loading="lazy" decoding="async">
+					<span class="bento-badge bento-badge--amber">Word Impartation</span>
 					<div class="bento-card-overlay">
 						<h3 class="bento-title">Impartation & Prophecy</h3>
 						<p class="bento-sub">Deep revelations into the mysteries of the Kingdom.</p>
@@ -313,24 +319,24 @@ get_header();
 				</div>
 
 				<div class="bento-card bento-mid-bottom">
-					<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="Joyful Fellowship" class="bento-card-bg">
+					<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="Joyful Fellowship" class="bento-card-bg" srcset="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 640px) 92vw, (max-width: 992px) 50vw, 40vw" loading="lazy" decoding="async">
 					<span class="bento-badge">Fellowship</span>
 					<div class="bento-card-overlay">
-						<h3 class="bento-title" style="font-size:1rem;">Leaders in Joyful Harmony</h3>
+						<h3 class="bento-title bento-title--sm">Leaders in Joyful Harmony</h3>
 					</div>
 				</div>
 
 				<div class="bento-card bento-right-top">
-					<img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80" alt="Worship in Spirit" class="bento-card-bg">
-					<span class="bento-badge" style="color:#8B5CF6; border-color:rgba(139,92,246,0.3);">Worship</span>
+					<img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80" alt="Worship in Spirit" class="bento-card-bg" srcset="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 640px) 92vw, (max-width: 992px) 50vw, 40vw" loading="lazy" decoding="async">
+					<span class="bento-badge bento-badge--violet">Worship</span>
 					<div class="bento-card-overlay">
-						<h3 class="bento-title" style="font-size:1rem;">Worship in the Holy Ghost</h3>
+						<h3 class="bento-title bento-title--sm">Worship in the Holy Ghost</h3>
 					</div>
 				</div>
 
 				<div class="bento-card bento-right-mid">
-					<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80" alt="Healing Streams Live" class="bento-card-bg">
-					<span class="bento-badge" style="color:#EF4444; border-color:rgba(239,68,68,0.3);">Healing Streams</span>
+					<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80" alt="Healing Streams Live" class="bento-card-bg" srcset="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 640px) 92vw, (max-width: 992px) 50vw, 40vw" loading="lazy" decoding="async">
+					<span class="bento-badge bento-badge--red">Healing Streams</span>
 					<div class="bento-card-overlay">
 						<h3 class="bento-title">Healing to the Nations</h3>
 						<p class="bento-sub">Miracles unfolding across Tema Newtown.</p>
@@ -338,7 +344,7 @@ get_header();
 				</div>
 
 				<div class="bento-card bento-wide-bottom">
-					<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=80" alt="Praise Night" class="bento-card-bg">
+					<img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=80" alt="Praise Night" class="bento-card-bg" srcset="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80 1200w, https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=80 1600w" sizes="(max-width: 640px) 92vw, (max-width: 992px) 50vw, 40vw" loading="lazy" decoding="async">
 					<span class="bento-badge">Tema Newtown Auditorium</span>
 					<div class="bento-card-overlay">
 						<h3 class="bento-title">Unstoppable Praise & Miracles Night</h3>
@@ -400,12 +406,12 @@ get_header();
 						What's<br>
 						<span class="gradient-text-purple">Happening</span>
 					</h2>
-					<p class="section-subtitle" style="margin-bottom:24px;">
+					<p class="section-subtitle">
 						Stay updated with services, leadership conferences, and life-changing events at Christ Embassy Tema Newtown.
 					</p>
 
-					<div style="font-size:0.85rem; color:#94A3B8; margin-bottom:8px; text-transform:uppercase; font-weight:700;">
-						Follow & Connect
+					<div class="happening-follow-label">
+						Follow &amp; Connect
 					</div>
 					<div class="happening-socials">
 						<a href="https://wa.me/233208591214" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="WhatsApp">💬</a>
@@ -418,9 +424,9 @@ get_header();
 				<!-- Right Column: Event Cards Stack -->
 				<div class="calendar-cards-stack">
 					<!-- BAR Conference -->
-					<div class="calendar-card" style="border-left: 5px solid #F59E0B;">
+					<div class="calendar-card calendar-card--amber">
 						<div class="calendar-left-wrap">
-							<div class="cal-date-pill" style="background:#F59E0B;">
+							<div class="cal-date-pill cal-date-pill--amber">
 								<span class="cal-month">MAY</span>
 								<span class="cal-day">15</span>
 							</div>
@@ -435,9 +441,9 @@ get_header();
 					</div>
 
 					<!-- Sunday Family Service -->
-					<div class="calendar-card" style="border-left: 5px solid #4F46E5;">
+					<div class="calendar-card calendar-card--indigo">
 						<div class="calendar-left-wrap">
-							<div class="cal-date-pill" style="background:#4F46E5;">
+							<div class="cal-date-pill cal-date-pill--indigo">
 								<span class="cal-month">SUN</span>
 								<span class="cal-day">WK</span>
 							</div>
@@ -452,9 +458,9 @@ get_header();
 					</div>
 
 					<!-- Worship Wednesday -->
-					<div class="calendar-card" style="border-left: 5px solid #EC4899;">
+					<div class="calendar-card calendar-card--pink">
 						<div class="calendar-left-wrap">
-							<div class="cal-date-pill" style="background:#EC4899;">
+							<div class="cal-date-pill cal-date-pill--pink">
 								<span class="cal-month">WED</span>
 								<span class="cal-day">MID</span>
 							</div>
@@ -481,7 +487,7 @@ get_header();
 					<h2 class="section-title">
 						Enjoy Our <span class="gradient-text-blue">Online Experience</span>
 					</h2>
-					<p style="color:#CBD5E1; font-size:1.05rem; line-height:1.6; margin-top:12px;">
+					<p class="online-exp-text">
 						Experience our online services and events from the comfort of your home or on-the-go. Join us for powerful worship sessions, inspiring sermons, and more.
 					</p>
 
@@ -509,8 +515,8 @@ get_header();
 				</div>
 
 				<div class="online-video-glow-frame" data-modal-target="modal-live">
-					<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Online Praise Stream" class="online-frame-img">
-					<div class="video-thumb-overlay" style="opacity:1;">
+					<img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Online Praise Stream" class="online-frame-img" srcset="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80 600w, https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80 800w" sizes="(max-width: 1024px) 92vw, 45vw" loading="lazy" decoding="async">
+					<div class="video-thumb-overlay video-thumb-overlay--always">
 						<div class="play-circle-icon"><svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
 					</div>
 				</div>
@@ -636,7 +642,7 @@ get_header();
 	</section>
 
 	<!-- ════════════════ 14. SUNDAY BANNER FINALE (LAYOUT 1) ════════════════ -->
-	<section id="sunday-service" class="sunday-banner-section" style="padding-top:40px;">
+	<section id="sunday-service" class="sunday-banner-section">
 		<div class="container">
 			<div class="sunday-banner-card">
 				<div class="sunday-heart-icon">
