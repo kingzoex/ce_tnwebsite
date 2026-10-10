@@ -200,13 +200,38 @@ function initGivingCopy() {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
       const textToCopy = btn.getAttribute('data-copy-text');
-      navigator.clipboard.writeText(textToCopy).then(() => {
-        showToast(`Copied "${textToCopy}" to clipboard!`);
-      }).catch(() => {
-        showToast(`Copied: ${textToCopy}`);
-      });
+      if (!textToCopy) return;
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          showToast(`Copied "${textToCopy}" to clipboard!`);
+        }).catch(() => {
+          copyFallback(textToCopy);
+        });
+      } else {
+        copyFallback(textToCopy);
+      }
     });
   });
+}
+
+function copyFallback(text) {
+  try {
+    const tempInput = document.createElement('textarea');
+    tempInput.value = text;
+    tempInput.style.position = 'fixed';
+    tempInput.style.top = '-9999px';
+    tempInput.style.left = '-9999px';
+    tempInput.style.opacity = '0';
+    document.body.appendChild(tempInput);
+    tempInput.focus();
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    showToast(`Copied "${text}" to clipboard!`);
+  } catch (err) {
+    showToast(`Account: ${text}`);
+  }
 }
 
 function showToast(message) {

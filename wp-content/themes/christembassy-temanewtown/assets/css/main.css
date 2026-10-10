@@ -1889,12 +1889,26 @@
 }
 
 .copy-badge-btn {
-  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  border-radius: var(--radius-full);
   color: #38BDF8;
-  background: none;
-  border: none;
+  font-size: 0.76rem;
+  font-weight: 700;
   cursor: pointer;
-  font-weight: 600;
+  transition: all 0.2s ease;
+  min-height: 32px;
+}
+
+.copy-badge-btn:hover,
+.copy-badge-btn:active {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: rgba(56, 189, 248, 0.5);
+  color: #FFFFFF;
 }
 
 @media (max-width: 580px) {
@@ -2602,7 +2616,7 @@ button:focus-visible,
 
 /* ═══════════════════ BREAKPOINT LADDER ═══════════════════ */
 
-/* --- ≤1200px: tighten the bento + rail rhythm --- */
+/* --- ≤1200px: Small desktops & large laptops --- */
 @media (max-width: 1200px) {
   .bento-grid {
     gap: 16px;
@@ -2613,7 +2627,7 @@ button:focus-visible,
   }
 }
 
-/* --- ≤1024px: tablet landscape --- */
+/* --- ≤1024px: Tablet landscape --- */
 @media (max-width: 1024px) {
   .hero-unified-grid {
     gap: 36px;
@@ -2651,8 +2665,20 @@ button:focus-visible,
   }
 }
 
-/* --- ≤992px: portrait tablets --- */
+/* --- ≤992px: Tablet portrait & dock collapse --- */
 @media (max-width: 992px) {
+  .dock-links {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+  }
+
   .hero-unified-wrap {
     min-height: auto;
   }
@@ -2664,9 +2690,10 @@ button:focus-visible,
 
   .pillars-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
 
-  /* Third pillar becomes a wide split card so the 2-column grid stays balanced */
+  /* Third pillar becomes a wide split card on tablet */
   .pillar-card:last-child {
     grid-column: span 2;
     flex-direction: row;
@@ -2684,6 +2711,7 @@ button:focus-visible,
   }
 
   .rail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
   }
 
@@ -2692,7 +2720,7 @@ button:focus-visible,
   }
 }
 
-/* --- ≤960px: hero stacks, so switch to a vertical (still light) scrim --- */
+/* --- ≤960px: Hero stacks vertically --- */
 @media (max-width: 960px) {
   .hero-unified-grid {
     grid-template-columns: 1fr;
@@ -2700,11 +2728,9 @@ button:focus-visible,
   }
 
   .hero-unified-wrap {
-    padding-top: clamp(104px, 14vh, 132px);
+    padding-top: clamp(96px, 13vh, 128px);
   }
 
-  /* Text now sits on top of the photo, so use a vertical scrim — but still
-     much lighter than the previous 0.45 → 0.9 black wash. */
   .hero-unified-bg {
     background-image:
       linear-gradient(180deg, rgba(7, 10, 18, 0.58) 0%, rgba(7, 10, 18, 0.5) 42%, rgba(7, 10, 18, 0.86) 100%),
@@ -2714,14 +2740,15 @@ button:focus-visible,
   }
 }
 
-/* --- ≤900px: single-column story blocks --- */
+/* --- ≤900px: Community & content cards stack --- */
 @media (max-width: 900px) {
   .community-welcome-card {
     grid-template-columns: 1fr;
   }
 
   .community-photo-side {
-    min-height: 260px;
+    min-height: 250px;
+    padding: 24px;
   }
 
   .community-content-side {
@@ -2733,13 +2760,31 @@ button:focus-visible,
   }
 }
 
-/* --- ≤768px: phones (portrait) --- */
+/* --- ≤768px: Mobile Landscape & Large Phones --- */
 @media (max-width: 768px) {
+  .site-top-bar {
+    padding: 14px 0;
+  }
+
+  .top-brand-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .top-brand-badge {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .section-header-row,
   .section-top-bar {
     align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 26px;
+    gap: 14px;
+    margin-bottom: 24px;
   }
 
   .section-header-row > div,
@@ -2748,41 +2793,56 @@ button:focus-visible,
   }
 
   .hero-main-title {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .hero-unified-actions {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .featured-show-body {
-    padding: 20px;
+    padding: 18px;
   }
 
+  .featured-show-img-wrap {
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Countdown Bar Stacks */
   .countdown-bar {
     flex-direction: column;
     align-items: stretch;
-    gap: 18px;
+    gap: 16px;
+    padding: 20px 16px;
   }
 
   .countdown-units-wrap {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px;
+    gap: 8px;
     width: 100%;
   }
 
   .timer-box {
     min-width: 0;
-    padding: 12px 6px;
+    padding: 10px 4px;
   }
 
   .timer-val {
-    font-size: clamp(1.35rem, 6vw, 1.8rem);
+    font-size: clamp(1.25rem, 5.5vw, 1.7rem);
+  }
+
+  .timer-label {
+    font-size: 0.62rem;
   }
 
   .countdown-headline {
-    font-size: clamp(1.1rem, 4.4vw, 1.3rem);
+    font-size: clamp(1.05rem, 4.4vw, 1.25rem);
+    text-align: center;
+  }
+
+  .countdown-badge-small {
+    text-align: center;
   }
 
   .countdown-bar > div:last-child,
@@ -2799,62 +2859,188 @@ button:focus-visible,
     font-size: clamp(1.15rem, 4.4vw, 1.35rem);
   }
 
-  .video-thumb-body {
-    padding: 12px 14px;
+  /* Calendar stack cards */
+  .calendar-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 16px;
   }
 
-  .video-card-title {
-    font-size: 0.94rem;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-    display: block;
+  .calendar-left-wrap {
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
   }
 
-  .video-card-subtitle {
-    font-size: 0.78rem;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
+  .cal-date-pill {
+    width: 52px;
+    height: 52px;
+  }
+
+  .cal-info h4 {
+    font-size: clamp(0.98rem, 4vw, 1.12rem);
+  }
+
+  .calendar-card > div:last-child,
+  .calendar-card > div:last-child .btn {
+    width: 100%;
+  }
+
+  .happening-socials {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .social-circle-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Online Experience & What to Expect */
+  .online-exp-card {
+    padding: clamp(24px, 5vw, 36px) clamp(16px, 4vw, 24px);
+  }
+
+  .exp-check-item {
+    align-items: flex-start;
+    font-size: clamp(0.88rem, 3.4vw, 0.96rem);
+  }
+
+  .expect-box {
+    padding: clamp(24px, 5vw, 36px) clamp(16px, 4vw, 24px);
+  }
+
+  .expect-title {
+    font-size: clamp(1.5rem, 5.8vw, 2.2rem);
+  }
+
+  .expect-text {
+    font-size: clamp(0.92rem, 3.5vw, 1.05rem);
+  }
+
+  .expect-box .btn {
+    width: 100%;
+  }
+
+  /* Family CTA & Sunday Banner */
+  .family-cta-card {
+    padding: clamp(24px, 5vw, 36px) clamp(16px, 4vw, 24px);
+  }
+
+  .family-title {
+    font-size: clamp(1.35rem, 5.5vw, 1.95rem);
+  }
+
+  .family-desc {
+    font-size: clamp(0.88rem, 3.5vw, 0.98rem);
+  }
+
+  .sunday-banner-card {
+    padding: clamp(28px, 5vw, 44px) clamp(16px, 4vw, 28px);
+  }
+
+  .sunday-title {
+    font-size: clamp(1.35rem, 5.5vw, 2rem);
+  }
+
+  .sunday-subtitle {
+    font-size: clamp(0.88rem, 3.4vw, 1rem);
+  }
+
+  .sunday-cta-group,
+  .family-actions,
+  .sunday-cta-group .btn,
+  .family-actions .btn {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* Partner section */
+  .partner-actions-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 32px;
   }
 
   .commission-title {
-    font-size: clamp(1.85rem, 7vw, 2.6rem);
+    font-size: clamp(1.6rem, 6.5vw, 2.4rem);
   }
 
   .commission-subtitle {
-    font-size: 1rem;
+    font-size: clamp(0.92rem, 3.5vw, 1.05rem);
   }
 
-  .partner-actions-row {
-    margin-top: 36px;
+  .commission-section .btn {
+    width: 100%;
+    max-width: 320px;
   }
 
-  .btn-lg {
-    padding: 14px 26px;
-    font-size: 1rem;
+  /* Footer on mobile */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 36px;
   }
 
-  /* Cheaper, smaller decorative glows on phones */
-  .ambient-glow {
-    width: 320px;
-    height: 320px;
-    filter: blur(90px);
-    opacity: 0.28;
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-legal-links {
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  /* Modals on phones */
+  .modal-overlay {
+    padding: 12px;
   }
 
   .modal-container {
-    padding: clamp(24px, 5vw, 32px) clamp(18px, 4vw, 28px);
+    padding: clamp(22px, 4.5vw, 30px) clamp(16px, 3.8vw, 24px);
+    max-height: 94vh;
+    border-radius: var(--radius-md);
   }
 
   .modal-title {
-    font-size: clamp(1.35rem, 5vw, 1.6rem);
+    font-size: clamp(1.25rem, 5vw, 1.55rem);
     padding-right: 36px;
+  }
+
+  .modal-service-grid,
+  .giving-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Form Inputs on Mobile: 16px to prevent iOS Safari auto-zoom */
+  .form-input,
+  .form-textarea,
+  .form-select {
+    font-size: 16px !important;
+    padding: 11px 14px;
+  }
+
+  .floating-dock {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+
+  .dock-logo {
+    padding-right: 8px;
+  }
+
+  .mobile-drawer-link {
+    font-size: 1.15rem;
   }
 }
 
-/* --- ≤640px: small phones --- */
+/* --- ≤640px: Standard Mobile Phones --- */
 @media (max-width: 640px) {
+  /* Ministry Pillars collapse to 1-col */
   .pillars-grid {
     grid-template-columns: 1fr;
   }
@@ -2873,181 +3059,196 @@ button:focus-visible,
     width: 100%;
   }
 
+  /* Topic Channels: 2-column grid */
   .topics-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    gap: 12px;
   }
 
   .topic-card {
-    height: auto;
+    min-height: 118px;
+    padding: 14px 16px;
   }
 
   .topic-title {
-    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    font-size: clamp(1.1rem, 4.6vw, 1.35rem);
   }
 
   .topic-wave-icon svg {
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
   }
 
+  /* Bento Showcase: 1-column responsive cards */
   .bento-grid {
     grid-template-columns: 1fr;
-    grid-auto-rows: 220px;
-    gap: 14px;
+    grid-auto-rows: minmax(185px, auto);
+    gap: 12px;
+  }
+
+  .bento-large-left,
+  .bento-wide-bottom {
+    min-height: 220px;
+  }
+
+  .bento-card-overlay {
+    padding: 14px;
+  }
+
+  .bento-badge {
+    top: 10px;
+    left: 10px;
+    font-size: 0.64rem;
+    padding: 3px 8px;
   }
 
   .bento-title {
     font-size: 1.05rem;
+    line-height: 1.25;
   }
 
-  .bento-badge {
-    font-size: 0.66rem;
-    max-width: calc(100% - 28px);
+  .bento-sub {
+    font-size: 0.78rem;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
-  /* Event cards stack so the CTA never squeezes the copy */
-  .calendar-card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 20px;
+  /* OTT Video Rail: Touch-friendly horizontal swipe rail on mobile */
+  .content-rail-section .container {
+    padding-right: 0;
   }
 
-  .calendar-left-wrap {
-    gap: 16px;
+  .rail-header {
+    padding-right: clamp(16px, 4vw, 28px);
   }
 
-  .calendar-card > div:last-child,
-  .calendar-card > div:last-child .btn {
-    width: 100%;
+  .rail-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 14px;
+    padding-bottom: 12px;
+    padding-right: clamp(16px, 4vw, 28px);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
 
-  .cal-info h4 {
-    font-size: clamp(1rem, 4.4vw, 1.15rem);
+  .rail-grid::-webkit-scrollbar {
+    display: none;
   }
 
-  .happening-socials {
-    flex-wrap: wrap;
+  .rail-grid .video-thumb-card {
+    flex: 0 0 clamp(235px, 68vw, 285px);
+    scroll-snap-align: start;
   }
 
-  .social-circle-btn {
-    width: 42px;
-    height: 42px;
-  }
-
-  .exp-check-item {
-    align-items: flex-start;
-    font-size: 0.95rem;
-  }
-
-  .sunday-cta-group,
-  .family-actions,
-  .sunday-cta-group .btn,
-  .family-actions .btn {
-    width: 100%;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .footer-legal-links {
-    flex-wrap: wrap;
-    gap: 12px 20px;
-  }
-
-  .modal-service-grid,
-  .giving-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .floating-dock {
-    padding: 6px 8px;
-    gap: 6px;
-  }
-
-  .dock-logo {
-    padding-right: 8px;
-  }
-
-  .dock-action-btn {
-    margin-left: 2px;
-  }
-
-  .mobile-drawer-link {
-    font-size: 1.12rem;
+  .video-card-subtitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 
-/* --- ≤560px: hero CTAs become an even 2-up grid --- */
+/* --- ≤560px: Compact Phone Layouts --- */
 @media (max-width: 560px) {
   .hero-unified-actions {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    gap: 8px;
     width: 100%;
   }
 
   .hero-unified-actions .btn {
-    padding: 12px 14px;
-    font-size: 0.88rem;
+    padding: 10px 12px;
+    font-size: 0.84rem;
     width: 100%;
   }
 
   .hero-pill-badge {
-    font-size: 0.68rem;
-    letter-spacing: 0.06em;
-    padding: 6px 12px;
+    font-size: 0.66rem;
+    letter-spacing: 0.05em;
+    padding: 5px 12px;
+    margin-bottom: 16px;
   }
 
   .hero-meta-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
-    font-size: 0.82rem;
+    gap: 6px;
+    font-size: 0.8rem;
   }
 
   .featured-show-tag {
-    font-size: 0.66rem;
-    padding: 4px 10px;
+    font-size: 0.64rem;
+    padding: 3px 8px;
+    top: 8px;
+    left: 8px;
   }
 
   .featured-schedule-pill {
-    font-size: 0.68rem;
-    padding: 5px 10px;
+    font-size: 0.64rem;
+    padding: 4px 8px;
+    bottom: 8px;
+    right: 8px;
   }
 
   .featured-show-title {
-    font-size: clamp(1.1rem, 5vw, 1.3rem);
+    font-size: clamp(1.05rem, 4.6vw, 1.25rem);
   }
 
   .featured-show-meta {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
   }
 
   .partner-action-box {
-    padding: 18px 14px;
+    padding: 14px 10px;
+    gap: 8px;
+  }
+
+  .partner-icon-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .partner-action-title {
+    font-size: 0.72rem;
   }
 
   .view-all-link {
-    padding: 9px 16px;
-    font-size: 0.84rem;
+    padding: 8px 14px;
+    font-size: 0.82rem;
   }
 }
 
-/* --- ≤480px: compact dock, single-column rails --- */
+/* --- ≤480px: Compact Mobile Dock & Header --- */
 @media (max-width: 480px) {
+  .site-top-bar {
+    padding: 10px 0;
+  }
+
+  .top-brand-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .top-brand-badge {
+    font-size: 0.64rem;
+    padding: 2px 7px;
+    max-width: 135px;
+  }
+
+  .btn-live-ghost {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
   .dock-brand-text {
     display: none;
   }
@@ -3063,62 +3264,112 @@ button:focus-visible,
   }
 
   .partner-highlight-badge {
-    font-size: 0.86rem;
-    padding: 6px 14px;
+    font-size: 0.82rem;
+    padding: 6px 12px;
+    line-height: 1.4;
   }
 }
 
-/* --- ≤400px: true small-phone pass --- */
-@media (max-width: 400px) {
+/* --- ≤380px: Ultra-Compact Phones (iPhone SE, Galaxy A series) --- */
+@media (max-width: 380px) {
+  .top-brand-badge {
+    display: none;
+  }
+
   .hero-unified-actions {
     grid-template-columns: 1fr;
   }
 
+  .hero-unified-actions .btn {
+    padding: 11px 16px;
+    font-size: 0.88rem;
+  }
+
   .topics-grid {
     grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .topic-card {
-    min-height: 132px;
+    min-height: 84px;
+    padding: 12px 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topic-title {
+    font-size: 1.15rem;
+  }
+
+  .topic-wave-icon {
+    align-self: center;
   }
 
   .timer-box {
-    padding: 10px 4px;
+    padding: 8px 2px;
+  }
+
+  .timer-val {
+    font-size: 1.15rem;
   }
 
   .timer-label {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
 
   .dock-action-btn {
     display: none;
   }
 
+  .partner-actions-row {
+    grid-template-columns: 1fr;
+  }
+
   .sunday-title,
   .family-title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 }
 
-/* --- Tall/short viewport guards --- */
-@media (max-height: 620px) and (max-width: 900px) {
+/* --- Tall/short viewport guards for landscape mobile --- */
+@media (max-height: 640px) and (max-width: 900px) {
   .hero-unified-wrap {
-    padding-top: 104px;
+    padding-top: 88px;
+    padding-bottom: 40px;
+  }
+
+  .mobile-drawer {
+    padding: 20px 16px;
+  }
+
+  .mobile-drawer-header {
+    margin-bottom: 16px;
+  }
+
+  .mobile-drawer-links {
+    gap: 6px;
+  }
+
+  .mobile-drawer-link {
+    font-size: 1rem;
+    padding: 4px 0;
   }
 }
 
-/* --- Touch devices: no hover, so show the play affordance --- */
+/* --- Touch devices: disable hover transforms, guarantee tap affordances --- */
 @media (hover: none) {
   .video-thumb-card:hover,
   .bento-card:hover,
   .pillar-card:hover,
-  .featured-show-card:hover {
+  .featured-show-card:hover,
+  .topic-card:hover {
     transform: none;
   }
 
   .video-thumb-overlay {
     opacity: 1;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.38) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.4) 100%);
   }
 
   .play-circle-icon {
