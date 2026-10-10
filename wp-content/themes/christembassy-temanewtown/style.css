@@ -4,18 +4,16 @@ Theme URI: https://healingstreams.tv/
 Description: Ultra-modern, high-impact theme for Christ Embassy Tema Newtown, featuring floating glassmorphism navigation, dynamic bento media showcases, live Healing Streams broadcast integration, and mobile money giving.
 Author: LoveWorld Media & Tech Team
 Author URI: https://healingstreams.tv/
-Version: 1.1.0
+Version: 1.2.0
 Text Domain: ce-temanewtown
 License: GNU General Public License v2 or later
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-
 :root {
-  --bg-obsidian: #08090E;
-  --bg-surface: #0E111A;
-  --bg-card: rgba(18, 22, 34, 0.7);
-  --bg-card-hover: rgba(26, 32, 50, 0.85);
+  --bg-obsidian: #0A0D15;
+  --bg-surface: #121724;
+  --bg-card: rgba(24, 31, 47, 0.62);
+  --bg-card-hover: rgba(34, 43, 64, 0.8);
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-glow: rgba(255, 255, 255, 0.16);
   --border-active: rgba(236, 72, 153, 0.4);
@@ -62,6 +60,8 @@ License: GNU General Public License v2 or later
 html {
   scroll-behavior: smooth;
   color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -69,7 +69,17 @@ body {
   background-color: var(--bg-obsidian);
   color: var(--text-primary);
   line-height: 1.6;
+  /* `clip` keeps the page from scrolling sideways without creating a scroll
+     container; `hidden` is the fallback for older browsers. */
   overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
+}
+
+/* Fluid, wrapping-friendly rhythm for narrow screens */
+@media (max-width: 480px) {
+  body {
+    line-height: 1.58;
+  }
 }

@@ -22,9 +22,9 @@
 				<p class="footer-mission">
 					Taking the divine presence of God to the nations of the world and demonstrating the character of the Holy Spirit. Walking in victory, dominion, and the higher life in Christ Jesus.
 				</p>
-				<div style="display:flex; align-items:center; gap:8px;">
+				<div class="footer-live-row">
 					<span class="live-indicator-dot"></span>
-					<span style="font-size:0.82rem; color:#E2E8F0; font-weight:600;">Atmosphere of Miracles Every Sunday</span>
+					<span class="footer-live-text">Atmosphere of Miracles Every Sunday</span>
 				</div>
 			</div>
 
@@ -58,8 +58,8 @@
 						<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
 						<span>Sundays: 7:00 AM & 9:30 AM<br>Wednesdays: 6:00 PM</span>
 					</div>
-					<div style="margin-top:10px;">
-						<a href="https://wa.me/233208591214" target="_blank" rel="noopener noreferrer" class="btn btn-dark-pill btn-sm" style="display:inline-flex;">
+					<div class="footer-cta-row">
+						<a href="https://wa.me/233208591214" target="_blank" rel="noopener noreferrer" class="btn btn-dark-pill btn-sm">
 							Chat on WhatsApp
 						</a>
 					</div>
@@ -102,9 +102,9 @@
 	<div class="modal-container" style="max-width:800px;">
 		<button class="modal-close-btn" aria-label="Close Live Stream Modal">&times;</button>
 		
-		<div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
-			<span class="live-indicator-dot" style="background:#F43F5E; box-shadow:0 0 10px #F43F5E;"></span>
-			<span style="font-size:0.8rem; font-weight:800; color:#F43F5E; letter-spacing:0.08em; text-transform:uppercase;">Live Broadcast Feed</span>
+		<div class="live-badge-row">
+			<span class="live-indicator-dot live-indicator-dot--red"></span>
+			<span class="live-badge-text">Live Broadcast Feed</span>
 		</div>
 		<h2 id="live-title" class="modal-title">Live Service Stream</h2>
 		<p class="modal-subtitle">Experience the manifestation of God's Word with the saints at Christ Embassy Tema Newtown.</p>
@@ -120,12 +120,12 @@
 		</div>
 
 		<!-- Interactive Prayer of Salvation and Giving bar -->
-		<div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-md); padding:20px; margin-bottom:16px;">
-			<h4 style="font-size:1.05rem; font-weight:700; color:#FFF; margin-bottom:6px;">Prayer of Salvation</h4>
-			<p style="font-size:0.9rem; color:#CBD5E1; line-height:1.5; margin-bottom:12px;">
+		<div class="modal-panel u-mb-16">
+			<h4 class="modal-subhead">Prayer of Salvation</h4>
+			<p class="modal-copy">
 				<em>"O Lord God, I believe with all my heart in Jesus Christ, Son of the living God. I believe He died for me and God raised Him from the dead. I confess with my mouth that Jesus Christ is Lord of my life..."</em>
 			</p>
-			<div style="display:flex; gap:12px; flex-wrap:wrap;">
+			<div class="modal-actions">
 				<a href="#" class="btn btn-primary btn-sm" data-modal-target="modal-first-timer">I Said This Prayer!</a>
 				<a href="#" class="btn btn-outline-glass btn-sm" data-modal-target="modal-giving">Send Live Offering</a>
 			</div>
@@ -142,26 +142,26 @@
 		<p class="modal-subtitle">We have saved a special seat for you this week at Christ Embassy Tema Newtown.</p>
 
 		<!-- Service Times Grid -->
-		<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:24px;">
-			<div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-md); padding:16px;">
-				<div style="font-size:0.75rem; color:var(--accent-amber); font-weight:700; text-transform:uppercase;">Sunday Services</div>
-				<div style="font-size:1.1rem; font-weight:700; color:#FFF; margin:4px 0;">1st Service: 7:00 AM</div>
-				<div style="font-size:1.1rem; font-weight:700; color:#FFF;">2nd Service: 9:30 AM</div>
-				<div style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">Atmosphere of Miracles, Praise & Word</div>
+		<div class="modal-service-grid">
+			<div class="modal-panel">
+				<div class="modal-panel-label">Sunday Services</div>
+				<div class="modal-panel-value">1st Service: 7:00 AM</div>
+				<div class="modal-panel-value">2nd Service: 9:30 AM</div>
+				<div class="modal-panel-note">Atmosphere of Miracles, Praise &amp; Word</div>
 			</div>
-			<div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-md); padding:16px;">
-				<div style="font-size:0.75rem; color:var(--accent-purple); font-weight:700; text-transform:uppercase;">Midweek Service</div>
-				<div style="font-size:1.1rem; font-weight:700; color:#FFF; margin:4px 0;">Wednesday: 6:00 PM</div>
-				<div style="font-size:0.85rem; color:#CBD5E1;">Bible Study & Communion</div>
-				<div style="font-size:0.8rem; color:var(--text-muted); margin-top:4px;">Deep revelation in God's Word</div>
+			<div class="modal-panel">
+				<div class="modal-panel-label is-purple">Midweek Service</div>
+				<div class="modal-panel-value">Wednesday: 6:00 PM</div>
+				<div class="modal-copy">Bible Study &amp; Communion</div>
+				<div class="modal-panel-note">Deep revelation in God's Word</div>
 			</div>
 		</div>
 
 		<!-- Location Information -->
-		<div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-md); padding:18px; margin-bottom:24px;">
-			<div style="font-size:0.85rem; font-weight:700; color:#FFF; margin-bottom:4px;">Physical Address</div>
-			<div style="font-size:0.95rem; color:#CBD5E1; margin-bottom:12px;">Opposite Manhean Senior High Technical School, Manhean Road, Tema Newtown, Ghana</div>
-			<div style="display:flex; gap:12px; flex-wrap:wrap;">
+		<div class="modal-panel u-mb-24">
+			<div class="modal-subhead">Physical Address</div>
+			<div class="modal-copy u-mb-12">Opposite Manhean Senior High Technical School, Manhean Road, Tema Newtown, Ghana</div>
+			<div class="modal-actions">
 				<a href="https://maps.google.com/?q=Manhean+Senior+High+Technical+School+Tema+Newtown+Ghana" target="_blank" rel="noopener noreferrer" class="btn btn-outline-glass btn-sm">
 					Open in Google Maps &rarr;
 				</a>
@@ -173,8 +173,8 @@
 
 		<!-- What to expect -->
 		<div>
-			<h4 style="font-size:1rem; font-weight:700; color:#FFF; margin-bottom:8px;">What to Expect</h4>
-			<p style="font-size:0.9rem; color:#94A3B8; line-height:1.5;">
+			<h4 class="modal-subhead">What to Expect</h4>
+			<p class="modal-copy is-muted">
 				Warm smiles, uplifting praise and worship, the life-transforming Word of God, and dedicated programs for children and teens. Our guest hosts will guide you every step of the way!
 			</p>
 		</div>
@@ -201,7 +201,7 @@
 					<span>020 859 1214</span>
 					<button class="copy-badge-btn" data-copy-text="0208591214">Copy</button>
 				</div>
-				<div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Name: Christ Embassy Tema Newtown</div>
+				<div class="giving-note">Name: Christ Embassy Tema Newtown</div>
 			</div>
 
 			<!-- Telecel / Vodafone Cash -->
@@ -214,21 +214,21 @@
 					<span>020 859 1214</span>
 					<button class="copy-badge-btn" data-copy-text="0208591214">Copy</button>
 				</div>
-				<div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Reference: Tithe / Offering / Partnership</div>
+				<div class="giving-note">Reference: Tithe / Offering / Partnership</div>
 			</div>
 		</div>
 
 		<!-- Bank Transfer Details -->
-		<div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-md); padding:18px; margin-bottom:20px;">
-			<div style="font-size:0.85rem; font-weight:700; color:#FFF; margin-bottom:6px;">Bank Wire / Direct Deposit</div>
-			<div style="font-size:0.92rem; color:#CBD5E1; line-height:1.6;">
+		<div class="modal-panel u-mb-20">
+			<div class="modal-subhead">Bank Wire / Direct Deposit</div>
+			<div class="modal-copy">
 				<strong>Bank:</strong> Zenith Bank / Ecobank Ghana<br>
 				<strong>Account Name:</strong> Christ Embassy Tema Newtown<br>
 				<strong>Account Type:</strong> Church Operations & Partnership
 			</div>
 		</div>
 
-		<div style="font-size:0.85rem; color:var(--text-muted); text-align:center;">
+		<div class="modal-footnote">
 			<em>"Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over..."</em> — Luke 6:38
 		</div>
 	</div>
@@ -270,7 +270,7 @@
 					<textarea id="reg_prayer" name="prayer" class="form-textarea" rows="3" placeholder="Share anything you'd like our pastor to pray with you about..."></textarea>
 				</div>
 
-				<button type="submit" class="btn btn-primary" style="width:100%; margin-top:8px;">
+				<button type="submit" class="btn btn-primary btn-block u-mt-8">
 					Complete Registration &rarr;
 				</button>
 			</form>

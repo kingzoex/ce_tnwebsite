@@ -26,14 +26,14 @@
 <header class="site-top-bar">
 	<div class="container top-bar-inner">
 		<div class="top-brand">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ce-logo.svg' ); ?>" alt="Christ Embassy" style="width:36px; height:36px;">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="top-brand-link">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ce-logo.svg' ); ?>" alt="Christ Embassy" class="top-brand-logo">
 				<span class="top-brand-badge">Christ Embassy • Tema Newtown</span>
 			</a>
 		</div>
 		<div class="top-actions">
-			<a href="#" class="btn btn-outline-glass btn-sm" data-modal-target="modal-live" style="color:#F43F5E; border-color:rgba(244,63,94,0.3);">
-				<span class="live-indicator-dot" style="background:#F43F5E; box-shadow:0 0 8px #F43F5E;"></span>
+			<a href="#" class="btn btn-outline-glass btn-sm btn-live-ghost" data-modal-target="modal-live">
+				<span class="live-indicator-dot live-indicator-dot--red"></span>
 				Watch Live
 			</a>
 			<a href="https://wa.me/233208591214" target="_blank" rel="noopener noreferrer" class="btn btn-dark-pill btn-sm" style="display:none;" id="top-phone-link">
@@ -88,11 +88,11 @@
 <!-- Mobile Navigation Drawer -->
 <div id="mobile-nav-drawer" class="mobile-drawer">
 	<div class="mobile-drawer-header">
-		<div style="display:flex; align-items:center; gap:12px;">
-			<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ce-logo.svg' ); ?>" alt="Christ Embassy" style="width:40px; height:40px;">
+		<div class="mobile-drawer-brand">
+			<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ce-logo.svg' ); ?>" alt="Christ Embassy" class="mobile-drawer-logo">
 			<div>
-				<div style="font-family:var(--font-display); font-weight:800; font-size:1.1rem; color:#FFF;">Christ Embassy</div>
-				<div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Tema Newtown</div>
+				<div class="mobile-drawer-brand-name">Christ Embassy</div>
+				<div class="mobile-drawer-brand-sub">Tema Newtown</div>
 			</div>
 		</div>
 		<button class="modal-close-btn mobile-drawer-close" aria-label="Close Navigation Menu">
@@ -105,7 +105,7 @@
 
 	<ul class="mobile-drawer-links">
 		<li><a href="#hero" class="mobile-drawer-link">Home <span>&rarr;</span></a></li>
-		<li><a href="#" class="mobile-drawer-link" data-modal-target="modal-live" style="color:#F43F5E;">Watch Live Stream <span>●</span></a></li>
+		<li><a href="#" class="mobile-drawer-link is-live" data-modal-target="modal-live">Watch Live Stream <span aria-hidden="true">●</span></a></li>
 		<li><a href="#sunday-service" class="mobile-drawer-link" data-modal-target="modal-visit">Plan A Visit / Services <span>&rarr;</span></a></li>
 		<li><a href="#upcoming-events" class="mobile-drawer-link">Upcoming Events <span>&rarr;</span></a></li>
 		<li><a href="#moments" class="mobile-drawer-link">Moments Worth Replaying <span>&rarr;</span></a></li>
@@ -114,9 +114,9 @@
 		<li><a href="#" class="mobile-drawer-link" data-modal-target="modal-first-timer">First Time? Connect <span>&rarr;</span></a></li>
 	</ul>
 
-	<div style="margin-top:auto; padding-top:24px; border-top:1px solid rgba(255,255,255,0.08);">
-		<div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:8px;">Church Location:</div>
-		<div style="font-size:0.95rem; color:#E2E8F0; margin-bottom:16px;">Opposite Manhean Senior High Technical School, Manhean Road, Tema Newtown</div>
-		<a href="tel:+233208591214" class="btn btn-outline-glass btn-sm" style="width:100%;">Call +233 20 859 1214</a>
+	<div class="mobile-drawer-footer">
+		<div class="mobile-drawer-location-label">Church Location:</div>
+		<div class="mobile-drawer-location">Opposite Manhean Senior High Technical School, Manhean Road, Tema Newtown</div>
+		<a href="tel:+233208591214" class="btn btn-outline-glass btn-sm btn-block">Call +233 20 859 1214</a>
 	</div>
 </div>

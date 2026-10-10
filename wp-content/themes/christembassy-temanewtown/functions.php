@@ -56,7 +56,7 @@ function ce_temanewtown_scripts() {
 		'ce-main-style',
 		get_template_directory_uri() . '/assets/css/main.css',
 		array(),
-		'1.1.0'
+		'1.2.0'
 	);
 
 	// Core Style (style.css)
@@ -64,7 +64,7 @@ function ce_temanewtown_scripts() {
 		'ce-theme-style',
 		get_stylesheet_uri(),
 		array( 'ce-main-style' ),
-		'1.1.0'
+		'1.2.0'
 	);
 
 	// Interactive JavaScript
@@ -72,7 +72,7 @@ function ce_temanewtown_scripts() {
 		'ce-main-script',
 		get_template_directory_uri() . '/assets/js/main.js',
 		array(),
-		'1.1.0',
+		'1.2.0',
 		true
 	);
 }
